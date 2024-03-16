@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>feedback</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <link rel="shortcut icon" href="../assets/img/larissa.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+  <section class="form-conteiner">
+    <div class="conteiner">
+      <form action="https://formspree.io/f/mqkrknnv" method="POST" onsubmit="handleSubmit()">
+        <h1>Entre em contato</h1>
+        <p>Se você se interessou pelo meu trabalho ou deseja enviar um feedback, sera um prazer iteragir.</p>
+
+        <div class="input-single">
+          <input type="text" name="nome" id="nome-box" class="input" required>
+          <label for="nome-box">Seu nome</label>
+        </div>
+
+        <div class="input-single">
+          <input type="text" name="email" id="email-box" class="input" required>
+          <label for="email-box">E-mail</label>
+        </div>
+
+        <div class="input-single">
+          <input type="text" name="text" id="tel-box" class="input" required>
+          <label for="tel-box">Digite aqui...</label>
+        </div>
+
+        <button type="submit" class="btn" onclick="enviar()">enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
